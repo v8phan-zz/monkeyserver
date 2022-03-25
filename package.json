@@ -1,0 +1,37 @@
+{
+  "name": "monkey",
+  "version": "1.0.0",
+  "description": "blog, backend",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-alpha.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "express-pino-logger": "^7.0.0",
+    "node-env-run": "^4.0.2",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "server": "node-env-run server --exec nodemon | pino-colada"
+  },
+  "author": "v8phan",
+  "license": "ISC",
+  "engines": {
+    "node": "12.14.1"
+  }
+}
